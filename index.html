@@ -7,7 +7,6 @@
     <title>Bazar Tony</title>
     <link rel="stylesheet" href="estilosempresa.css">
     <link rel="icon" href="logoempresa.jpg" type="image/x-icon">
-
 </head>
 <body>
 
@@ -27,24 +26,39 @@
                 <p><strong>Correo:</strong> <a href="mailto:didiergaacosta@gmail.com">didiergaacosta@gmail.com</a></p>
             </div>
         </div>
-
         
         <div class="products">
-            <div class="product"><img src="foto1mesa.webp" alt="Producto 1"><p>Producto 1</p></div>
-            <div class="product"><img src="foto2sala.jpg" alt="Producto 2"><p>Producto 2</p></div>
-            <div class="product"><img src="foto3sala.webp" alt="Producto 3"><p>Producto 3</p></div>
-            <div class="product"><img src="foto4sala.jpeg" alt="Producto 4"><p>Producto 4</p></div>
-            <div class="product"><img src="foto5sala.webp" alt="Producto 5"><p>Producto 5</p></div>
-            <div class="product"><img src="foto6comoda.jpeg" alt="Producto 6"><p>Producto 6</p></div>
-            <div class="product"><img src="foto7comoda.jpeg" alt="Producto 7"><p>Producto 7</p></div>
-            <div class="product"><img src="foto8comoda.jpeg" alt="Producto 8"><p>Producto 8</p></div>
-            <div class="product"><img src="foto9comoda.png" alt="Producto 9"><p>Producto 9</p></div>
-            <div class="product"><img src="foto10comoda.jpeg" alt="Producto 10"><p>Producto 10</p></div>
-            <div class="product"><img src="foto11jardin.jpeg" alt="Producto 11"><p>Producto 11</p></div>
-            <div class="product"><img src="foto12jardin.jpg" alt="Producto 12"><p>Producto 12</p></div>
-            <div class="product"><img src="foto13jardin.jpg" alt="Producto 13"><p>Producto 13</p></div>
-            <div class="product"><img src="foto14jardin.jpg" alt="Producto 14"><p>Producto 14</p></div>
-            <div class="product"><img src="foto15jardin.jpeg" alt="Producto 15"><p>Producto 15</p></div>
+            <h2>Productos</h2>
+            <div class="product" data-price="1200">
+                <img src="foto1mesa.webp" alt="Producto 1">
+                <p>Producto 1</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <!-- Resto de productos con precios -->
+            <div class="product" data-price="1500">
+                <img src="foto2sala.jpg" alt="Producto 2">
+                <p>Producto 2</p>
+                <button class="add-to-cart">Agregar al carrito</button>
+            </div>
+            <!-- Añade precios para todos los productos en el mismo formato -->
+        </div>
+
+        <div class="cart">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items"></ul>
+            <p><strong>Total:</strong> $<span id="cart-total">0</span></p>
+        </div>
+
+        <div class="location">
+            <h2>Ubicación</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.9278191832453!2d-98.27698638504869!3d26.080650897785084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8665178d431d9b21%3A0x1234567890abcdef!2sBazar%20Tony!5e0!3m2!1ses!2smx!4v1690000000000!5m2!1ses!2smx" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
         </div>
     </div>
 
@@ -52,5 +66,6 @@
         <p>&copy; 2024 Bazar Tony - Todos los derechos reservados</p>
     </footer>
 
+    <script src="carrito.js"></script>
 </body>
 </html>
